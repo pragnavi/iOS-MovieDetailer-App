@@ -34,6 +34,8 @@ class DetailViewController: UIViewController {
 
         titleLabel.text = movie.title
         overviewLabel.text = movie.overview
+        
+        navigationItem.largeTitleDisplayMode = .never
 
         // Unwrap the optional vote average
         if let voteAverage = movie.voteAverage {
